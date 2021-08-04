@@ -1,0 +1,10 @@
+#div2 {
+    margin-top: 1rem;
+    background-color: teal;
+    height: 300px;
+    width: 300px;
+  }
+  .upper {
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
