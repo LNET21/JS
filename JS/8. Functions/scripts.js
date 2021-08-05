@@ -1,13 +1,14 @@
 namnetPåFunc();
 
 //Named function
-//Hoisting
+//Hoisting (läggs först i filen)
 function namnetPåFunc() {
     //här skriver vi den kod vi vill ska köras när vi kallar på funktionen.
     console.log('hej på dig du');
 }
 
 //Function expression
+//Vi kommer inte åt funktionen före den är deklarerad
 let greet = function() {
     console.log('hej hej')
 }
@@ -54,12 +55,12 @@ const func1 = callback => {
 let user = {
     firstName: 'Kalle',
     lastName: 'Anka',
-    fullName: function() {
+    fullName: function() {   //this är objektet. Använd en vanlig funktion i det här fallet
       console.log(this);
       return this.firstName + ' ' + this.lastName;
     },
     fullName2: () => {
-      console.log(this)
+      console.log(this)     //Med arrow funktion är this i det här fallet window objektet
       return this.firstName + ' ' + this.lastName;
     }
   }
