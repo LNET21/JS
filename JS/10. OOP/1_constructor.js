@@ -32,7 +32,7 @@ function Product(name, price, desc) {
     this.description = desc
   }
 
-  //Utan new sätter vi värdet på this till Window i Product ovan
+//Utan new sätter vi värdet på this till Window i Product ovan
 //Det blir alltså globala variabler
 //Här skapar nyckelordet new ett tomt objekt
 //sätter this till det nya objektet (vi behöver inte använda oss av return)
