@@ -21,6 +21,8 @@ btn1.addEventListener('click', function(){
             //console.log(data);
             textOutput.innerHTML = data;
         })
+
+
 })
 
 
